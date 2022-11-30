@@ -1,6 +1,6 @@
 
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import './components/Navbar'
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -34,14 +34,14 @@ function App() {
       document.body.style.backgroundColor = '#0c355e';
       showAlert("Dark mode has been enabled","success")
       setBtColor('dark')
-      document.title = 'TextUtil-Dark mode';
+      // document.title = 'TextUtil-Dark mode';
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled","success")
       setBtColor('info')
-      document.title = 'TextUtil-Light mode';
+      // document.title = 'TextUtil-Light mode';
     }
   }
   const toggleDef = ()=>{
@@ -74,13 +74,18 @@ function App() {
     </Routes> */}
     {/* <Switch>
           <Route path="/about">
-            <About />
+            <About mode={Mode} />
           </Route>
-          <Route path="/"> */}
+          <Route path="/">
           <TextForm showAlert ={showAlert} 
           heading='Enter the text to analyze below' mode={Mode} btColor={BtColor} />
-          {/* </Route>
+          </Route>
     </Switch> */}
+    
+    <TextForm showAlert ={showAlert} 
+      heading='Enter the text to analyze below' mode={Mode} btColor={BtColor} 
+    />
+    <About mode={Mode} />
     </div>
     {/* </Router> */}
     </>
