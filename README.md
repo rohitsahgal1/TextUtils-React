@@ -1,4 +1,14 @@
 Visit link :- https://rohitsahgal1.github.io/TextUtils-React/
+# Text Utility Using React Js
+This is a basic text utility single page web aplication made using React Js and can perform various text utility tasks
+
+## Features
+- Convert text to UpperCase
+- Convert text to LowerCase
+- Calculate number of words
+- Calculate number of characters
+- Calculates time required to read
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
